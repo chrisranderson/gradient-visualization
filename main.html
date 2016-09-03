@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+</html>
+  <head>
+    <!-- Plotly.js -->
+    <script src="./plotly.js" charset="utf-8"></script>
+    <style type="text/css">
+      .container {
+        display: flex;
+      }
+
+      * {
+        font-family: 'Open Sans', sans-serif;
+        box-sizing: border-box
+      }
+
+      .drawing-pad {
+          background: #dedede;
+          height: 340px;
+          width: auto;
+          margin: 15px 44px;
+          cursor: crosshair;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <div class="container">
+      <div class="left-column">
+        <div id="plot-3d" style="width:100%"></div>
+        <div>
+          <label for='x-position'>x position</label>
+          <input type="range" id="x-position" min="0" value="25" max="100" step="1">
+          <label for='y-position'>y position</label>
+          <input type="range" id="y-position" min="0" value="25" max="100" step="1">
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div id="x-plot" style="width:100%"></div>
+        <div id="y-plot" style="width:100%"></div>
+        <div class="drawing-pad"></div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src='./main3.js'></script>
+  </body>
+</html>
+

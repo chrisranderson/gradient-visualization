@@ -16,38 +16,59 @@
 
       .drawing-pad {
           background: #dedede;
-          height: 340px;
-          width: auto;
-          margin: 15px 44px;
+          height: 300px;
+          width: 400px;
+          margin: 15 auto;
           cursor: crosshair;
+          font-size: 38px;
+          text-align: center;
+          color: #b7b7b7;
+      }
+
+      .sliders {
+        margin: 10px
+      }
+
+      body {
+        margin: 10px;
       }
     </style>
   </head>
   <body>
-
-
+    <ul>
+      <li>Click and drag the surface graph to change the camera's point of view.</li>
+      <li>Hover over the gray box to change the location of the orange dot.</li>
+      <li>Check the top of main.js for configuration options.</li>
+    </ul>
 
     <div class="container">
       <div class="left-column">
         <div id="plot-3d" style="width:100%"></div>
-        <div>
-          <label for='x-position'>x position</label>
-          <input type="range" id="x-position" min="0" value="25" max="100" step="1">
-          <label for='y-position'>y position</label>
-          <input type="range" id="y-position" min="0" value="25" max="100" step="1">
-        </div>
+        
       </div>
 
       <div class="right-column">
+
+        <h2 class='plot-header'>x slice</h2>
         <div id="x-plot" style="width:100%"></div>
+
+        <h2 class="plot-header">y slice</h2>
         <div id="y-plot" style="width:100%"></div>
-        <div class="drawing-pad"></div>
+        <div class='sliders'>
+          <label for='x-position'>x position:</label>
+          <input type="range" id="x-position" min="0" value="25" max="100" step="1">
+          <label for='y-position'>y position:</label>
+          <input type="range" id="y-position" min="0" value="25" max="100" step="1">
+        </div>
+        <div class="drawing-pad">
+          hover here
+        </div>
       </div>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src='./main3.js'></script>
+    <script src='./main.js'></script>
   </body>
 </html>
 

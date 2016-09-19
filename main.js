@@ -19,8 +19,8 @@ var x_index = 25
 var y_index = 25
 
 var layout_3d = {
-  width: 900,
-  height: 700,
+  width: 700,
+  height: 600,
   margin: {
     l: 20,
     r: 0,

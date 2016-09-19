@@ -1,0 +1,3 @@
+[submodule "gradient-viz"]
+path = demos/gradient-viz
+url = https://github.com/chrisranderson/gradient-visualization.git
